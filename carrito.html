@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi carrito | Dulce Momento</title>
+    <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="top-bar">
+        Envío gratis en compras mayores a S/. 80
+    </div>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="logo">Dulce Momento</div>
+
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Tienda</a>
+            <a href="index.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="registro.html">Mi cuenta</a>
+            <a href="carrito.html" aria-label="Carrito">🛒</a>
+        </nav>
+    </header>
+
+    <!-- CINTA DECORATIVA -->
+    <div class="pattern"></div>
+
+    <main>
+        <!-- TITULO -->
+        <section class="page-title">
+            <h1>Mi carrito de compras</h1>
+            <p>Revisa tus dulces favoritos antes de continuar.</p>
+        </section>
+
+        <!-- CONTENIDO DEL CARRITO -->
+        <section class="cart-section">
+
+            <div class="cart-products">
+                <h2>Productos seleccionados</h2>
+
+                <!-- PRODUCTO 1 -->
+                <article class="cart-item">
+                    <img
+                        src="img/torta_chocolate.png"
+                        alt="Torta de chocolate"
+                    >
+
+                    <div class="item-info">
+                        <h3>Torta de Chocolate</h3>
+                        <p>Deliciosa torta de chocolate con crema.</p>
+                        <p class="quantity">Cantidad: 1</p>
+                    </div>
+
+                    <div class="item-price">
+                        S/. 65.00
+                    </div>
+                </article>
+
+                <!-- PRODUCTO 2 -->
+                <article class="cart-item">
+                    <img
+                        src="img/cupcakes.png"
+                        alt="Cupcakes variados"
+                    >
+
+                    <div class="item-info">
+                        <h3>Cupcakes</h3>
+                        <p>Cupcakes decorados con crema.</p>
+                        <p class="quantity">Cantidad: 1 caja</p>
+                    </div>
+
+                    <div class="item-price">
+                        S/. 35.00
+                    </div>
+                </article>
+
+                <a href="catalogo.html" class="continue-shopping">
+                    Seguir comprando
+                </a>
+            </div>
+
+            <!-- RESUMEN DE COMPRA -->
+            <aside class="cart-summary">
+                <h2>Resumen de compra</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>S/. 100.00</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Envío</span>
+                    <span>Por confirmar</span>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span>S/. 100.00</span>
+                </div>
+
+                <p class="shipping-note">
+                    El costo de envío se coordinará al realizar el pedido.
+                </p>
+
+                <a href="pago.html" class="checkout-btn">
+                    Continuar con la compra
+                </a>
+            </aside>
+
+        </section>
+    </main>
+
+    <!-- CINTA ANTES DEL FOOTER -->
+    <div class="pattern"></div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-info">
+                <h2 class="footer-logo">Dulce Momento</h2>
+                <p>Pequeños momentos, grandes sabores.</p>
+
+                <h3>Visítanos</h3>
+                <p>📍 Lima, Perú</p>
+                <p>📞 +51 999 999 999</p>
+                <p>✉ contacto@dulcemomento.com</p>
+
+                <h3>Horarios</h3>
+                <p>Lunes a sábado: 10:00 a.m. - 7:00 p.m.</p>
+            </div>
+
+            <div class="footer-map">
+                <!-- Pega aquí el iframe de Google Maps
+                     que ya utilizas en tu proyecto -->
+                 <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.3395350647647!2d-76.9924765!3d-11.9509777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c585be1c0841%3A0x7fb46e92638668ff!2sPasteler%C3%ADa%20DULCES%20MOMENTOS!5e0!3m2!1ses-419!2spe!4v1791411445848!5m2!1ses-419!2spe"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Dulce Momento. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

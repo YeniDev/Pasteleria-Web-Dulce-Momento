@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contáctanos | Dulce Momento</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="top-bar">
+        Envío gratis en compras mayores a S/. 80
+    </div>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="logo">Dulce Momento</div>
+
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Tienda</a>
+            <a href="index.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="registro.html">Mi cuenta</a>
+            <a href="carrito.html" aria-label="Carrito">🛒</a>
+        </nav>
+    </header>
+
+    <div class="pattern"></div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contact-page">
+
+        <section class="contact-title">
+            <h1>Contáctanos</h1>
+            <p>
+                ¿Tienes alguna consulta o quieres hacer un pedido especial?
+                Estamos aquí para ayudarte.
+            </p>
+        </section>
+
+        <section class="contact-layout">
+
+            <!-- INFORMACIÓN DE CONTACTO -->
+            <div class="contact-info">
+
+                <h2>¡Nos encantaría escucharte!</h2>
+
+                <p class="contact-description">
+                    En Dulce Momento queremos acompañarte en tus celebraciones.
+                    Escríbenos para consultar nuestros productos, realizar pedidos
+                    personalizados o resolver tus dudas.
+                </p>
+
+                <div class="contact-detail">
+                    <div class="contact-icon">📍</div>
+
+                    <div>
+                        <h3>Dirección</h3>
+                        <p>Lima, Perú</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="contact-icon">📞</div>
+
+                    <div>
+                        <h3>Teléfono</h3>
+                        <p>+51 999 999 999</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="contact-icon">✉</div>
+
+                    <div>
+                        <h3>Correo electrónico</h3>
+                        <p>contacto@dulcemomento.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="contact-icon">🕒</div>
+
+                    <div>
+                        <h3>Horario de atención</h3>
+                        <p>Lunes a sábado</p>
+                        <p>10:00 a.m. - 7:00 p.m.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FORMULARIO DE CONTACTO -->
+            <div class="contact-form-container">
+
+                <h2>Envíanos un mensaje</h2>
+
+                <p class="contact-form-description">
+                    Completa los siguientes campos y cuéntanos cómo podemos ayudarte.
+                </p>
+
+                <form class="contact-form">
+
+                    <div class="contact-field">
+                        <label for="contact-nombre">Nombre completo</label>
+
+                        <input
+                            type="text"
+                            id="contact-nombre"
+                            name="nombre"
+                            placeholder="Ingresa tu nombre"
+                            required>
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="contact-correo">Correo electrónico</label>
+
+                        <input
+                            type="email"
+                            id="contact-correo"
+                            name="correo"
+                            placeholder="ejemplo@correo.com"
+                            required>
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="contact-telefono">Teléfono (opcional)</label>
+
+                        <input
+                            type="tel"
+                            id="contact-telefono"
+                            name="telefono"
+                            placeholder="Tu número de celular">
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="contact-asunto">Asunto</label>
+
+                        <select id="contact-asunto" name="asunto" required>
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta">Consulta sobre productos</option>
+                            <option value="pedido">Pedido personalizado</option>
+                            <option value="celebracion">Tortas para celebraciones</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="contact-mensaje">Tu mensaje</label>
+
+                        <textarea
+                            id="contact-mensaje"
+                            name="mensaje"
+                            rows="5"
+                            placeholder="Escribe tu consulta aquí..."
+                            required></textarea>
+                    </div>
+
+                    <button type="button" class="contact-submit">
+                        Enviar mensaje
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="pattern"></div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-info">
+                <h2 class="footer-logo">Dulce Momento</h2>
+                <p>Pequeños momentos, grandes sabores.</p>
+
+                <h3>Visítanos</h3>
+                <p>📍 Lima, Perú</p>
+                <p>📞 +51 999 999 999</p>
+                <p>✉ contacto@dulcemomento.com</p>
+
+                <h3>Horarios</h3>
+                <p>Lunes a sábado: 10:00 a.m. - 7:00 p.m.</p>
+            </div>
+
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.3395350647647!2d-76.9924765!3d-11.9509777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c585be1c0841%3A0x7fb46e92638668ff!2sPasteler%C3%ADa%20DULCES%20MOMENTOS!5e0!3m2!1ses-419!2spe!4v1791411445848!5m2!1ses-419!2spe"
+                    title="Ubicación de referencia en Google Maps"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Dulce Momento. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

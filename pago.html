@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proceso de pago | Dulce Momento</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="top-bar">
+        Envío gratis en compras mayores a S/. 80
+    </div>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="logo">Dulce Momento</div>
+
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Tienda</a>
+            <a href="index.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="registro.html">Mi cuenta</a>
+            <a href="carrito.html" aria-label="Carrito">🛒</a>
+        </nav>
+    </header>
+
+    <div class="pattern"></div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="payment-page">
+
+        <section class="payment-title">
+            <h1>Finaliza tu compra</h1>
+            <p>¡Tus dulces favoritos están a un paso de llegar a ti!</p>
+        </section>
+
+        <div class="payment-layout">
+
+            <!-- FORMULARIO DE DATOS -->
+            <section class="payment-form">
+
+                <form>
+
+                    <div class="payment-block">
+                        <h2>1. Datos de contacto</h2>
+
+                        <div class="payment-fields">
+                            <div class="payment-field">
+                                <label for="nombre">Nombres y apellidos</label>
+                                <input type="text" id="nombre" name="nombre"
+                                       placeholder="Ingresa tu nombre completo" required>
+                            </div>
+
+                            <div class="payment-field">
+                                <label for="correo">Correo electrónico</label>
+                                <input type="email" id="correo" name="correo"
+                                       placeholder="ejemplo@correo.com" required>
+                            </div>
+
+                            <div class="payment-field">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono"
+                                       placeholder="Tu número de celular" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-block">
+                        <h2>2. Dirección de entrega</h2>
+
+                        <div class="payment-fields">
+                            <div class="payment-field">
+                                <label for="direccion">Dirección</label>
+                                <input type="text" id="direccion" name="direccion"
+                                       placeholder="Av., calle o jirón" required>
+                            </div>
+
+                            <div class="payment-field">
+                                <label for="distrito">Distrito</label>
+                                <input type="text" id="distrito" name="distrito"
+                                       placeholder="Ingresa tu distrito" required>
+                            </div>
+
+                            <div class="payment-field full-width">
+                                <label for="referencia">Referencia (opcional)</label>
+                                <input type="text" id="referencia" name="referencia"
+                                       placeholder="Ej. cerca de un parque">
+                            </div>
+
+                            <div class="payment-field full-width">
+                                <label for="fecha">Fecha de entrega</label>
+                                <input type="date" id="fecha" name="fecha" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-block">
+                        <h2>3. Método de pago</h2>
+
+                        <div class="payment-options">
+
+                            <label class="payment-option">
+                                <input type="radio" name="metodo-pago" value="yape-plin" required>
+                                <span>
+                                    <strong>Yape o Plin</strong>
+                                    <small>Coordina el pago mediante billetera digital.</small>
+                                </span>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="metodo-pago" value="transferencia">
+                                <span>
+                                    <strong>Transferencia bancaria</strong>
+                                    <small>Los datos bancarios se coordinarán al confirmar.</small>
+                                </span>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="metodo-pago" value="contra-entrega">
+                                <span>
+                                    <strong>Pago contra entrega</strong>
+                                    <small>Consulta la disponibilidad de esta modalidad.</small>
+                                </span>
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <div class="payment-block">
+                        <h2>4. Notas del pedido</h2>
+
+                        <div class="payment-field">
+                            <label for="notas">Indicaciones adicionales (opcional)</label>
+                            <textarea id="notas" name="notas" rows="4"
+                                      placeholder="Escribe aquí alguna indicación especial..."></textarea>
+                        </div>
+                    </div>
+
+                    <a href="carrito.html" class="payment-back">
+                        ← Volver al carrito
+                    </a>
+
+                    <a href="confirmacion.html" class="payment-confirm">
+                        Confirmar pedido
+                       </a>
+
+                </form>
+
+            </section>
+
+            <!-- RESUMEN DEL PEDIDO -->
+            <aside class="payment-summary">
+
+                <h2>Resumen de tu pedido</h2>
+
+                <div class="payment-product">
+                    <img src="img/torta-chocolate.jpg" alt="Torta de chocolate">
+
+                    <div>
+                        <h3>Torta de Chocolate</h3>
+                        <p>Cantidad: 1</p>
+                    </div>
+
+                    <strong>S/. 65.00</strong>
+                </div>
+
+                <div class="payment-product">
+                    <img src="img/cupcakes.jpg" alt="Cupcakes variados">
+
+                    <div>
+                        <h3>Cupcakes</h3>
+                        <p>Cantidad: 1 caja</p>
+                    </div>
+
+                    <strong>S/. 35.00</strong>
+                </div>
+
+                <div class="payment-totals">
+                    <div>
+                        <span>Subtotal</span>
+                        <span>S/. 100.00</span>
+                    </div>
+
+                    <div>
+                        <span>Envío</span>
+                        <span>Por confirmar</span>
+                    </div>
+
+                    <div class="payment-total">
+                        <span>Total</span>
+                        <span>S/. 100.00</span>
+                    </div>
+                </div>
+
+                <p class="payment-note">
+                    El costo de envío y la coordinación del pago se confirmarán
+                    antes de completar el pedido.
+                </p>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <div class="pattern"></div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-info">
+                <h2 class="footer-logo">Dulce Momento</h2>
+                <p>Pequeños momentos, grandes sabores.</p>
+
+                <h3>Visítanos</h3>
+                <p>📍 Lima, Perú</p>
+                <p>📞 +51 999 999 999</p>
+                <p>✉ contacto@dulcemomento.com</p>
+
+                <h3>Horarios</h3>
+                <p>Lunes a sábado: 10:00 a.m. - 7:00 p.m.</p>
+            </div>
+
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.3395350647647!2d-76.9924765!3d-11.9509777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c585be1c0841%3A0x7fb46e92638668ff!2sPasteler%C3%ADa%20DULCES%20MOMENTOS!5e0!3m2!1ses-419!2spe!4v1791411445848!5m2!1ses-419!2spe"
+                    title="Ubicación de referencia en Google Maps"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Dulce Momento. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
